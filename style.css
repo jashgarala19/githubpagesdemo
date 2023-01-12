@@ -5,7 +5,11 @@
 }
 body
 {
-    /* background-color:blue; */
+
+    /* background-image: url('https://41.media.tumblr.com/efd15be8d41b12a7b0ef17fba27c3e20/tumblr_mqqy59HMaf1qzattso1_1280.jpg'); */
+    background-image:url('340434.png');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .container
@@ -13,6 +17,7 @@ body
     padding: 10px;
     display:flex;
     /* border:1px solid red; */
+
     height:100vh;
     margin: auto;
     justify-content: center;
@@ -24,11 +29,41 @@ body
     /* font-size: 1.1vw; */
 
     font-family:Century Gothic;
+    ;
     
 }
+.container_in
+{
+  
+    padding:15px;
+    border-radius: 10px;
+    transform: rotate(-5deg);
+    cursor: pointer;
+    transition:ease-in 0.1s;
+    
+}
+
+.container_in:hover
+{
+    transform: rotate(0deg);
+}
+@supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+    .container_in {
+      -webkit-backdrop-filter: blur(10px);
+      backdrop-filter: blur(10px);
+      background-color: rgba(255, 255, 255, 0.1);  
+    }
+  
+  }
 .dev 
 {
     font-family:Consolas;
-    color:gray;
+    font-weight: 900;
+    font-style: italic;
+
+
+  
+   
+ 
     
 }
